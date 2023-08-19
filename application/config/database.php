@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------
@@ -71,8 +71,8 @@ $active_group = 'default';
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'username' => 'nsitfadmin',
+	'password' => 'EBSnsitf!@$421',
 	'database' => 'ebs_nsitf_helpdesk',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
