@@ -509,7 +509,7 @@ img.not-found {
 
 .navbar-z .navbar-brand > img {
   max-width: 140px;
-  max-height: 30px;
+  max-height: 10vh;
 }
 
 .navbar-z .navbar-toggler {
