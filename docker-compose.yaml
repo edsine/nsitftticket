@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  app:
+    image: servicom:latest
+    build: .
+    ports:
+      - '8000:80'
+    environment:
+      CONTAINER_ROLE: app
+    env_file:
+      - .env
+    networks:
+      - prod_network
+    healthcheck:
+      test: ["CMD", "curl", "-fk", "https://localhost:80/"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+networks:
+  prod_network:
+    external: true
